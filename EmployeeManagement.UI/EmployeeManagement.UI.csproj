@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  EmployeeManagement Solution File
+  ASP.NET Web Forms (.NET Framework 4.8)
+  3-Tier Architecture: UI, BLL, DAL
+-->
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeeManagement.UI</RootNamespace>
+    <AssemblyName>EmployeeManagement.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="EmployeeManagement.BLL">
+      <HintPath>..\EmployeeManagement.BLL\bin\Debug\EmployeeManagement.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EmployeeManagement.DAL">
+      <HintPath>..\EmployeeManagement.DAL\bin\Debug\EmployeeManagement.DAL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Site.Master" />
+    <Content Include="Login.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Employees\EmployeeList.aspx" />
+    <Content Include="Employees\EmployeeForm.aspx" />
+    <Content Include="Employees\EmployeeView.aspx" />
+    <Content Include="Departments\DepartmentList.aspx" />
+    <Content Include="Designations\DesignationList.aspx" />
+    <Content Include="Reports\EmployeeReport.aspx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="JS\app.js" />
+    <Content Include="Images\default-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeList.aspx.cs">
+      <DependentUpon>Employees\EmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeForm.aspx.cs">
+      <DependentUpon>Employees\EmployeeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeView.aspx.cs">
+      <DependentUpon>Employees\EmployeeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments\DepartmentList.aspx.cs">
+      <DependentUpon>Departments\DepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designations\DesignationList.aspx.cs">
+      <DependentUpon>Designations\DesignationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EmployeeReport.aspx.cs">
+      <DependentUpon>Reports\EmployeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+  </ItemGroup>
+</Project>
