@@ -57,12 +57,16 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
-    <Reference Include="EmployeeManagement.BLL">
-      <HintPath>..\EmployeeManagement.BLL\bin\Debug\EmployeeManagement.BLL.dll</HintPath>
-    </Reference>
-    <Reference Include="EmployeeManagement.DAL">
-      <HintPath>..\EmployeeManagement.DAL\bin\Debug\EmployeeManagement.DAL.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.BLL\EmployeeManagement.BLL.csproj">
+      <Project>{B2C3D4E5-F6A7-8901-BCDE-F12345678901}</Project>
+      <Name>EmployeeManagement.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeManagement.DAL\EmployeeManagement.DAL.csproj">
+      <Project>{C3D4E5F6-A7B8-9012-CDEF-123456789012}</Project>
+      <Name>EmployeeManagement.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -78,7 +82,14 @@
     <Content Include="Reports\EmployeeReport.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="JS\app.js" />
-    <Content Include="Images\default-avatar.png" />
+    <Content Include="Handlers\GetDesignations.ashx" />
+    <Content Include="Handlers\CheckDuplicate.ashx" />
+    <Content Include="Handlers\DeleteEmployee.ashx" />
+    <Content Include="Handlers\DeleteDepartment.ashx" />
+    <Content Include="Handlers\DeleteDesignation.ashx" />
+    <Content Include="Handlers\GetDepartment.ashx" />
+    <Content Include="Handlers\GetDesignation.ashx" />
+    <Content Include="Handlers\UpdateStatus.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Site.Master.cs">
@@ -107,6 +118,9 @@
     </Compile>
     <Compile Include="Reports\EmployeeReport.aspx.cs">
       <DependentUpon>Reports\EmployeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
