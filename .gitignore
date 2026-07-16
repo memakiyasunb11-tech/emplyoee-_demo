@@ -1,0 +1,44 @@
+# Visual Studio / MSBuild
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.opensdf
+*.sdf
+*.VC.db
+
+# Build Outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Uploaded Files (photos - these are user-generated)
+EmployeeManagement.UI/Images/Uploads/*
+!EmployeeManagement.UI/Images/Uploads/.gitkeep
+
+# Publish Output
+[Pp]ublish/
+publish/
+PublishOutput/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
