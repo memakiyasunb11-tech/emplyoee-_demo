@@ -1,6 +1,7 @@
 using System;
 using System.Web;
 using System.Web.Security;
+using System.Web.UI;
 
 namespace EmployeeManagement.UI
 {
@@ -16,7 +17,17 @@ namespace EmployeeManagement.UI
         /// </summary>
         protected void Application_Start(object sender, EventArgs e)
         {
-            // Application startup logic here
+            // Disable unobtrusive validation mode (avoids jquery ScriptResourceMapping requirement)
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
+            // Register jQuery script resource mapping (used by WebForms validators)
+            ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
+            {
+                Path = "~/JS/jquery-3.7.1.min.js",
+                DebugPath = "~/JS/jquery-3.7.1.min.js",
+                CdnPath = "https://code.jquery.com/jquery-3.7.1.min.js",
+                CdnDebugPath = "https://code.jquery.com/jquery-3.7.1.min.js"
+            });
         }
 
         /// <summary>
