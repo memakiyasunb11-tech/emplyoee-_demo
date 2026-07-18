@@ -95,31 +95,61 @@
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Employees\EmployeeList.aspx.cs">
+      <DependentUpon>Employees\EmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeList.aspx.designer.cs">
       <DependentUpon>Employees\EmployeeList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employees\EmployeeForm.aspx.cs">
       <DependentUpon>Employees\EmployeeForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employees\EmployeeForm.aspx.designer.cs">
+      <DependentUpon>Employees\EmployeeForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Employees\EmployeeView.aspx.cs">
+      <DependentUpon>Employees\EmployeeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeView.aspx.designer.cs">
       <DependentUpon>Employees\EmployeeView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Departments\DepartmentList.aspx.cs">
       <DependentUpon>Departments\DepartmentList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Departments\DepartmentList.aspx.designer.cs">
+      <DependentUpon>Departments\DepartmentList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Designations\DesignationList.aspx.cs">
+      <DependentUpon>Designations\DesignationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designations\DesignationList.aspx.designer.cs">
       <DependentUpon>Designations\DesignationList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reports\EmployeeReport.aspx.cs">
       <DependentUpon>Reports\EmployeeReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reports\EmployeeReport.aspx.designer.cs">
+      <DependentUpon>Reports\EmployeeReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
