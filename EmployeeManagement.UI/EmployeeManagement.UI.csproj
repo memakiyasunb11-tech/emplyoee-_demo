@@ -129,4 +129,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VisualStudioVersion)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v18.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VisualStudioVersion)' == ''" />
 </Project>
