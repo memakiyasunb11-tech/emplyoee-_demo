@@ -1,7 +1,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
-using EmployeeManagement.BLL.Models;
+using EmployeeManagement.DAL.Models;
 
 namespace EmployeeManagement.DAL
 {

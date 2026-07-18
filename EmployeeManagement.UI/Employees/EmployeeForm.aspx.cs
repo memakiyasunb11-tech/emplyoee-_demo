@@ -4,7 +4,7 @@ using System.IO;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using EmployeeManagement.BLL.Models;
+using EmployeeManagement.DAL.Models;
 using EmployeeManagement.BLL.Services;
 
 namespace EmployeeManagement.UI.Employees

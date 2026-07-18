@@ -2,7 +2,7 @@
 using System;
 using System.Web;
 using System.Web.Script.Serialization;
-using EmployeeManagement.BLL.Models;
+using EmployeeManagement.DAL.Models;
 using EmployeeManagement.BLL.Services;
 
 namespace EmployeeManagement.UI.Handlers

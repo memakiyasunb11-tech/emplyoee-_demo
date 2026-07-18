@@ -48,6 +48,10 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\DepartmentModel.cs" />
+    <Compile Include="Models\DesignationModel.cs" />
+    <Compile Include="Models\EmployeeModel.cs" />
     <Compile Include="ConnectionManager.cs" />
     <Compile Include="UserDAL.cs" />
     <Compile Include="DepartmentDAL.cs" />

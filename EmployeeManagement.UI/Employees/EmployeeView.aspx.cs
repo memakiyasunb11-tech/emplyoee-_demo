@@ -1,6 +1,6 @@
 using System;
 using System.Web.UI;
-using EmployeeManagement.BLL.Models;
+using EmployeeManagement.DAL.Models;
 using EmployeeManagement.BLL.Services;
 
 namespace EmployeeManagement.UI.Employees

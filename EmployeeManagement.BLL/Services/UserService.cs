@@ -1,7 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using EmployeeManagement.BLL.Models;
+using EmployeeManagement.DAL.Models;
 using EmployeeManagement.DAL;
 
 namespace EmployeeManagement.BLL.Services
